@@ -1,6 +1,6 @@
 {
   "name": "cra-template-erich",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "keywords": [
     "react",
     "create-react-app",
@@ -13,6 +13,9 @@
     "url": "https://github.com/facebook/create-react-app.git",
     "directory": "packages/cra-template"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "license": "ISC",
   "engines": {
     "node": ">=11"
@@ -20,5 +23,38 @@
   "files": [
     "template",
     "template.json"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.0.9",
+    "lint-staged": "^9.5.0",
+    "mutationobserver-shim": "^0.3.3",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }
