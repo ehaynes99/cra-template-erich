@@ -1,6 +1,6 @@
 {
   "name": "cra-template-erich",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "react",
     "create-react-app",
@@ -39,6 +39,7 @@
     "precommit": "lint-staged"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-config-standard-react": "^9.2.0",
@@ -51,7 +52,7 @@
     "husky": "^4.0.9",
     "lint-staged": "^9.5.0",
     "mutationobserver-shim": "^0.3.3",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.14.1",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
     "react": "^16.12.0",
