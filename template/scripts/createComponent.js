@@ -27,7 +27,6 @@ const buildContents = () => {
   const { componentName } = options
   const className = hyphenate(componentName)
   const component = `
-    import React from 'react'
     import './${componentName}.scss'
 
     const ${componentName} = () => {
@@ -50,7 +49,6 @@ const buildContents = () => {
   `
 
   const test = `
-    import React from 'react'
     import { render, screen } from '@testing-library/react'
     import ${componentName} from './${componentName}'
 
