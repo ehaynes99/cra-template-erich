@@ -6,7 +6,6 @@
     "es6": true,
     "jest": true
   },
-  "plugins": ["react", "react-hooks"],
   "parserOptions": {
     "sourceType": "module",
     "allowImportExportEverywhere": true
